@@ -27,9 +27,8 @@ class CardsLobbyViewController: UIViewController {
         stackView.delegate = self
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return .lightContent
     }
 
     @IBAction func menu(_ sender: AnyObject) {

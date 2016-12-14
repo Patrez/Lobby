@@ -31,6 +31,11 @@ class BlurLobbyViewController: UIViewController {
         stackView.delegate = self
 
     }
+
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return .lightContent
+    }
+
     @IBAction func showLobby(_ sender: Any) {
         UIView.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 0.65, initialSpringVelocity: 1.6, options: .curveEaseIn, animations: {
             self.stackView.arrangedSubviews.forEach {

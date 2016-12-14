@@ -417,6 +417,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6ky-ZU-hez"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
