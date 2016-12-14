@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		B9627A441D665C36004D8DDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9627A431D665C36004D8DDE /* AppDelegate.swift */; };
-		B9627A461D665C36004D8DDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9627A451D665C36004D8DDE /* ViewController.swift */; };
+		B9627A461D665C36004D8DDE /* CardsLobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9627A451D665C36004D8DDE /* CardsLobbyViewController.swift */; };
 		B9627A491D665C36004D8DDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9627A471D665C36004D8DDE /* Main.storyboard */; };
 		B9627A4C1D665C36004D8DDE /* NavigationConcept.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B9627A4A1D665C36004D8DDE /* NavigationConcept.xcdatamodeld */; };
 		B9627A4E1D665C36004D8DDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9627A4D1D665C36004D8DDE /* Assets.xcassets */; };
 		B9627A511D665C36004D8DDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9627A4F1D665C36004D8DDE /* LaunchScreen.storyboard */; };
+		B98C3DCA1E01714D00D26120 /* BlurLobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98C3DC91E01714D00D26120 /* BlurLobbyViewController.swift */; };
+		B98C3DCC1E01716000D26120 /* CustomStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98C3DCB1E01716000D26120 /* CustomStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B9627A401D665C36004D8DDE /* NavigationConcept.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationConcept.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9627A431D665C36004D8DDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B9627A451D665C36004D8DDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B9627A451D665C36004D8DDE /* CardsLobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsLobbyViewController.swift; sourceTree = "<group>"; };
 		B9627A481D665C36004D8DDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B9627A4B1D665C36004D8DDE /* NavigationConcept.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NavigationConcept.xcdatamodel; sourceTree = "<group>"; };
 		B9627A4D1D665C36004D8DDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9627A501D665C36004D8DDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9627A521D665C36004D8DDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B98C3DC91E01714D00D26120 /* BlurLobbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurLobbyViewController.swift; sourceTree = "<group>"; };
+		B98C3DCB1E01716000D26120 /* CustomStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,10 @@
 		B9627A421D665C36004D8DDE /* NavigationConcept */ = {
 			isa = PBXGroup;
 			children = (
+				B98C3DCB1E01716000D26120 /* CustomStackView.swift */,
+				B98C3DC81E016F5600D26120 /* BlurLobby */,
+				B98C3DC71E016F3F00D26120 /* CardsLobby */,
 				B9627A431D665C36004D8DDE /* AppDelegate.swift */,
-				B9627A451D665C36004D8DDE /* ViewController.swift */,
 				B9627A471D665C36004D8DDE /* Main.storyboard */,
 				B9627A4D1D665C36004D8DDE /* Assets.xcassets */,
 				B9627A4F1D665C36004D8DDE /* LaunchScreen.storyboard */,
@@ -65,6 +71,22 @@
 				B9627A4A1D665C36004D8DDE /* NavigationConcept.xcdatamodeld */,
 			);
 			path = NavigationConcept;
+			sourceTree = "<group>";
+		};
+		B98C3DC71E016F3F00D26120 /* CardsLobby */ = {
+			isa = PBXGroup;
+			children = (
+				B9627A451D665C36004D8DDE /* CardsLobbyViewController.swift */,
+			);
+			name = CardsLobby;
+			sourceTree = "<group>";
+		};
+		B98C3DC81E016F5600D26120 /* BlurLobby */ = {
+			isa = PBXGroup;
+			children = (
+				B98C3DC91E01714D00D26120 /* BlurLobbyViewController.swift */,
+			);
+			name = BlurLobby;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +161,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9627A461D665C36004D8DDE /* ViewController.swift in Sources */,
+				B98C3DCC1E01716000D26120 /* CustomStackView.swift in Sources */,
+				B98C3DCA1E01714D00D26120 /* BlurLobbyViewController.swift in Sources */,
+				B9627A461D665C36004D8DDE /* CardsLobbyViewController.swift in Sources */,
 				B9627A441D665C36004D8DDE /* AppDelegate.swift in Sources */,
 				B9627A4C1D665C36004D8DDE /* NavigationConcept.xcdatamodeld in Sources */,
 			);

@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-class ViewController: UIViewController {
+class CardsLobbyViewController: UIViewController {
 
-    @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var stackView: CustomStackView!
     @IBOutlet weak var topStackViewConstraint: NSLayoutConstraint!
 
     enum LobbyScreen: Int {
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        stackView.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,26 +42,6 @@ class ViewController: UIViewController {
             }, completion: nil)
     }
 
-    @IBAction func first(_ sender: AnyObject) {
-        show(.home)
-
-    }
-    @IBAction func second(_ sender: AnyObject) {
-       show(.friends)
-    }
-
-    @IBAction func third(_ sender: AnyObject) {
-        show(.messages)
-    }
-
-    @IBAction func fourth(_ sender: AnyObject) {
-        show(.discover)
-    }
-
-    @IBAction func fift(_ sender: AnyObject) {
-        show(.settings)
-    }
-
     func show(_ screen: LobbyScreen) {
         UIView.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 0.65, initialSpringVelocity: 1.6, options: .curveEaseIn, animations: {
             self.stackView.arrangedSubviews.forEach {
@@ -72,7 +52,13 @@ class ViewController: UIViewController {
             self.stackView.layoutIfNeeded()
             }, completion: nil)
     }
+}
 
-
+extension CardsLobbyViewController: StackViewDelegate {
+    func didTapOnView(at index: Int) {
+        if let screen = LobbyScreen(rawValue: index) {
+            show(screen)
+        }
+    }
 }
 
