@@ -22,11 +22,8 @@ class CustomStackView: UIStackView {
         configureTapGestures()
     }
 
-    func configureTapGestures() {
+    private func configureTapGestures() {
         arrangedSubviews.forEach { view in
-            view.gestureRecognizers?.forEach { gesture in
-                view.removeGestureRecognizer(gesture)
-            }
             let tapGesture = UITapGestureRecognizer(target: self, action: #selector(didTapOnView))
             view.addGestureRecognizer(tapGesture)
         }
