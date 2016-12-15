@@ -15,10 +15,11 @@ protocol StackViewDelegate {
 
 class CustomStackView: UIStackView {
 
-    var delegate: StackViewDelegate? {
-        didSet {
-            configureTapGestures()
-        }
+    var delegate: StackViewDelegate?
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        configureTapGestures()
     }
 
     func configureTapGestures() {
