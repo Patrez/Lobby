@@ -1,6 +1,6 @@
 # Lobby
 iOS navigation concept usign UIStackView
 
-![B2GRHT](http://i.makeagif.com/media/12-14-2016/B2GRHT.gif)
+![B2GRHT](http://gph.is/2hYspaB)
 
-![dMxaMP](http://i.makeagif.com/media/12-14-2016/dMxaMP.gif)
+![dMxaMP](http://gph.is/2hYvqaU)
